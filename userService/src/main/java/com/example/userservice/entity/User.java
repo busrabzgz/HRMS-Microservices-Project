@@ -29,7 +29,7 @@ public class User {
     @Column(columnDefinition = "integer DEFAULT 0", nullable = false)
     private Long version = 0L;
 
-    @Column()
+    @Column(name = "first_name")
     private String firstName;
     private String lastName;
     private String citizenNumber;
