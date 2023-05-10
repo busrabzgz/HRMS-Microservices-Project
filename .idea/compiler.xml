@@ -8,17 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="discoveryService" />
+        <module name="gateway" />
         <module name="userService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="discoveryService" target="17" />
+      <module name="gateway" target="17" />
       <module name="userService" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="discoveryService" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="userService" options="-parameters" />
     </option>
   </component>
